@@ -7,10 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'aurora': ['Aurora', 'Arial', 'sans-serif']
+        'aurora': ["Aurora", 'Arial', 'sans-serif'],
+        'arial': ["Arial", 'sans-serif']
       },
       colors: {
-        'gray': '#252525'
+        'gray': '#252525',
+        'lgray': '#646464F2'
       }
     },
   },

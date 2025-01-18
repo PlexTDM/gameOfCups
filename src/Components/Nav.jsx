@@ -1,6 +1,6 @@
 const Nav = () => {
     return (
-        <nav className="h-[50px] bg-white font-aurora text-xs uppercase flex justify-between px-5 py-4">
+        <nav className="h-[50px] bg-white font-arial text-xs uppercase flex justify-between px-5 py-4 sticky top-0 z-50">
             <a className="" href="/">
                 <img src="/logo.svg" alt="logo" />
             </a>
@@ -19,7 +19,7 @@ const Nav = () => {
                 </a>
             </div>
 
-            <div className="w-[90px] flex gap-2 items-center">
+            <div className="w-[190px] flex gap-2 items-center justify-end">
                 <p className="text-black font-semibold underline hover:text-sm pointer-events-none">my cart</p>
                 <span className="w-6 h-6 bg-black text-white rounded-full flex items-center justify-center">
                     0

@@ -2,27 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Aurora';
-  src: local('Aurora'), url(./assets/Aurora.otf) format('otf');
+:root {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-nav a::after{
-    transform-origin: 100% 50%;
-    transform: scale3d(0, 1, 1);
-    transition: transform 200ms;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    top: 100%;
-    left: 0;
-    pointer-events: none;
-    content: '';
-    background-color: black;
+@layer base {
+  @font-face {
+    font-family: "Aurora";
+    font-style: normal;
+    /* font-weight: 400; */
+    src: local("Aurora"), url("./assets/Aurora.otf") format("opentype");
+  }
+}
+.underline-effect::after {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.3s;
+  transition: transform 200ms !important;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(37, 37, 37, 1);
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  content: "";
 }
 
-nav a:hover::after{
-    transform-origin: 0% 50%;
-    transform: scale3d(1, 1, 1);
+.underline-effect:hover::after {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+}
+
+nav a::after {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 200ms;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  content: "";
+  background-color: black;
+}
+
+nav a:hover::after {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.animation-start {
+  animation: up 1s forwards;
+}
+
+.animate {
+  @apply h-min overflow-hidden;
+}
+
+.animate * {
+  @apply opacity-0 -translate-y-full;
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+    animation-timing-function: 0;
+  }
+  1% {
+    opacity: 0;
+    transform: translateY(50px);
+    animation-timing-function: cubic-bezier(0.41, -0.01, 0.58, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
