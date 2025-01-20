@@ -30,9 +30,8 @@ const Landing = () => {
                             for (const child of entry.target.children) {
                                 child.classList.add('animation-start')
                             }
-                            // entry.target.classList.add('animation-start');
                             observer.unobserve(entry.target);
-                            await sleep(300); // Adjust the delay as needed
+                            await sleep(300);
                         }
                     }
                 };
@@ -59,7 +58,7 @@ const Landing = () => {
 
     return (
         <section className="w-full font-arial text-gray">
-            <p className="uppercase text-[10.8vw] text-center text-gray font-aurora leading-[230px]">
+            <p className="uppercase text-[10.7719vw] text-center text-gray font-aurora leading-[230px]">
                 game of cups
             </p>
             <div className="relative">
@@ -75,13 +74,45 @@ const Landing = () => {
             </div>
             <div className="flex justify-between mt-[170px]">
                 <div className="animate"><p className="uppercase">collections</p></div>
-                <div>
+                <div className="mr-12">
                     <div className="animate">
-                        <h1 className="font-aurora leading-[1.1] text-[60px] font-thin text-center w-fit uppercase">In the Name of Ice and Flame</h1>
+                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">In the Name of Ice and Flame</h1>
                     </div>
                     <div className="animate">
-                        <h1 className="font-aurora leading-[1.1] text-[60px] font-thin text-center w-fit uppercase">Cups for True Lords</h1>
+                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">Cups for True Lords</h1>
                     </div>
+                </div>
+            </div>
+
+            <div className="text-[12px] break-keep">
+                <div className="animate w-fit -translate-x-[20%] mx-auto">
+                    <p>Welcome to our unique collections of goblets, each reflecting the spirit</p>
+                </div>
+
+                <div className="animate w-[300px] mx-auto">
+                    <p>
+                        and atmosphere of legendary Westeros. In each collection you will find goblets inspired by different houses, cultures and key moments in the saga of George R. R. Martin.
+                    </p>
+                </div>
+                <div className="animate w-[300px] mt-4 mx-auto">
+                    <p>
+                        Our goblets come in a variety of styles, from stately and noble to dark and mysterious. Every detail, from the patterns to the shape, conveys a unique story and allows you to feel part of the epic struggle for the Iron Throne.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div className="grid lg:grid-cols-4 md:grid-rows-1 md:grid-cols-3 sm:grid-rows-4 gap-4">
+                    <a className="col-start-1 col-end-1">
+                        <img src="/img/cup1.jpg" />
+                    </a>
+                    <a className="lg:col-start-3">
+                        <img src="/img/cup1.jpg" />
+                    </a>
+                    <a className="lg:col-start-4 lg:col-end-4">
+                        <img src="/img/cup1.jpg" />
+                    </a>
+
                 </div>
             </div>
         </section>
