@@ -119,7 +119,7 @@ const Landing = () => {
                 <img src="/img/vase.jpg" className="relative z-10" style={{ opacity: opacity }} />
             </div>
             <div className="flex justify-between mt-[170px]">
-                <div className="animate"><p className="uppercase">catalog</p></div>
+                <div className="animate"><p className="uppercase">collections</p></div>
                 <div className="mr-12">
                     <div className="animate">
                         <h1 className="font-aurora leading-[1.1] lg:text-[48px] text-[30px] font-thin text-center w-fit uppercase">In the Name of Ice and Flame</h1>
@@ -153,7 +153,8 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup1.jpg" className="cursor-pointer" />
                         </div>
-                        <h3>Collection “Symbols of Glory”</h3>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <h3 className="font-lg font-semibold">Collection “Symbols of Glory”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, gold, gemstones</p>
                             <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -163,7 +164,8 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup2.jpg" className="cursor-pointer" />
                         </div>
-                        <h3>Collection “The Age of Ice and Fire”</h3>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <h3 className="font-lg font-semibold">Collection “The Age of Ice and Fire”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, gold, gemstones</p>
                             <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -173,7 +175,8 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup3.jpg" className="cursor-pointer" />
                         </div>
-                        <h3>Collection “The Houses of Westeros”</h3>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, silver, gemstones</p>
                             <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -187,7 +190,8 @@ const Landing = () => {
                     <div className="animate-leftRight">
                         <img src="/img/cup4.jpg" className="cursor-pointer" />
                     </div>
-                    <h3>Collection “Westerosi Feasts”</h3>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <h3 className="font-lg font-semibold">Collection “Westerosi Feasts”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gold, gemstones</p>
                         <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -199,7 +203,8 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup5.jpg" className="cursor-pointer" />
                         </div>
-                        <h3>Collection ”Secrets of the night”</h3>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <h3 className="font-lg font-semibold">Collection ”Secrets of the night”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, silver, gemstones</p>
                             <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -216,7 +221,8 @@ const Landing = () => {
                     <div className="animate-upDown">
                         <img src="/img/cup6.jpg" className="cursor-pointer" />
                     </div>
-                    <h3>Collection “The Houses of Westeros”</h3>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>
                         <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
@@ -226,17 +232,19 @@ const Landing = () => {
                     <div className="animate-upDown">
                         <img src="/img/cup7.jpg" className="cursor-pointer" />
                     </div>
-                    <h3>Collection “The Houses of Westeros”</h3>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>
                         <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
                     </span>
                 </div>
-                <div className="lg:col-start-4 lg:col-end-4">
+            <div className="lg:col-start-4 lg:col-end-4">
                     <div className="animate-upDown">
                         <img src="/img/cup8.jpg" className="cursor-pointer" />
                     </div>
-                    <h3>Collection “The Houses of Westeros”</h3>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>
                         <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
