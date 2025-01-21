@@ -21,7 +21,6 @@ const App = () => {
         </div>
         <Landing />
         <Catalog />
-        <div className='min-h-[100vh]'></div>
       </main>
     </div>
   )

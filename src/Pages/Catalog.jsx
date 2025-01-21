@@ -1,42 +1,4 @@
-import { useEffect } from "react";
-
 const Catalog = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-        const addClassWithDelay = async () => {
-          for (let i = 0; i < entries.length; i++) {
-            const entry = entries[i];
-            if (entry.isIntersecting) {
-              for (const child of entry.target.children) {
-                child.classList.add("animation-start");
-              }
-              observer.unobserve(entry.target);
-              await sleep(300);
-            }
-          }
-        };
-
-        addClassWithDelay();
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll(".animate").forEach((ref) => {
-      if (ref) {
-        observer.observe(ref);
-      }
-    });
-    return () => {
-      document.querySelectorAll(".animate").forEach((ref) => {
-        if (ref) {
-          observer.unobserve(ref);
-        }
-      });
-    };
-  }, []);
 
   return (
     <div className="font-arial">
