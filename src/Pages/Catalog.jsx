@@ -45,7 +45,7 @@ const Catalog = () =>{
                     <a className="w-1/4 left-[20px]  h-[268px] ">
                         <img src="/img/Mcup1.jpg" />
                     </a>
-                    <a className="w-[823px] left-[20px]  h-[268px]">
+                    <a className="w-1/2 left-[20px]  h-[268px]">
                         <img src="/img/Mcup2.jpg" />
                     </a>
                     <a className="w-1/4 left-[20px]  h-[268px] ">
@@ -69,13 +69,13 @@ const Catalog = () =>{
                  </a>
         </div>
         <div className="flex justify-center items-center h-screen gap-4">
-                    <a className="w-[423px] left-[20px]  h-[268px] ">
+                    <a className="w-1/4 left-[20px]  h-[268px] ">
                         <img src="/img/Mcup8.jpg" />
                     </a>
-                    <a className="w-[823px] left-[20px]  h-[268px]">
+                    <a className="w-1/2 left-[20px]  h-[268px]">
                         <img src="/img/Mcup9.jpg" />
                     </a>
-                    <a className="w-[423px] left-[20px]  h-[268px] ">
+                    <a className="w-1/4 left-[20px]  h-[268px] ">
                         <img src="/img/Mcup10.jpg" />
                     </a>
                 </div>
