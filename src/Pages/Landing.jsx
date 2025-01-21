@@ -73,7 +73,7 @@ const Landing = () => {
 
                 addClassWithDelay();
             },
-            { threshold: 0.1 }
+            { threshold: 0.8 }
         );
 
         document.querySelectorAll('.animate-upDown').forEach((ref) => {
