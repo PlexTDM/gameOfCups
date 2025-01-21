@@ -1,4 +1,5 @@
 import Nav from './Components/Nav';
+import Catalog from './Pages/Catalog';
 import Landing from './Pages/Landing';
 
 const App = () => {
@@ -19,10 +20,11 @@ const App = () => {
           </a>
         </div>
         <Landing />
+        <Catalog />
         <div className='min-h-[100vh]'></div>
       </main>
     </div>
   )
 }
 
-export default App
+export default App;

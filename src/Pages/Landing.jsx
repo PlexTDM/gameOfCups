@@ -18,6 +18,7 @@ const Landing = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries, observer) => {
@@ -58,35 +59,24 @@ const Landing = () => {
 
     return (
         <section className="w-full font-arial text-gray">
-            <p className="uppercase text-[10.7719vw] text-center text-gray font-aurora leading-[230px]">
-                game of cups
-            </p>
-            <div className="relative">
-                <img src="/img/vase.jpg" style={{ opacity: opacity }} />
-                <div className="absolute top-[80px] left-1/2  w-[390px] text-gray font-arial">
-                    <h1 className="leading-[22px] text-xl font-medium mb-8">
-                        Feel like a true lord of Westeros. Targaryens, Starkes, Lannisters, Greyjoys — pick a side
-                    </h1>
-                    <a href="https://gameofcups.tilda.ws/catalog" className="uppercase text-lg font-bold hover:text-lgray duration-200 underline-effect w-fit relative">
-                        see catalog
-                    </a>
-                </div>
-            </div>
             <div className="flex justify-between mt-[170px]">
-                <div className="animate"><p className="uppercase">collections</p></div>
+                <div className="animate"><p className="uppercase">catalog</p></div>
                 <div className="mr-12">
                     <div className="animate">
-                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">In the Name of Ice and Flame</h1>
+                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">Journey Through Westeros</h1>
                     </div>
                     <div className="animate">
-                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">Cups for True Lords</h1>
+                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase">From the Darkness</h1>
+                    </div>
+                    <div className="animate">
+                        <h1 className="font-aurora leading-[1.1] text-[48px] font-thin text-center w-fit uppercase"> of Time to Your Table</h1>
                     </div>
                 </div>
             </div>
 
             <div className="text-[12px] break-keep">
                 <div className="animate w-fit -translate-x-[20%] mx-auto">
-                    <p>Welcome to our unique collections of goblets, each reflecting the spirit</p>
+                    <p>Immerse yourself in the majestic and violent Westeros as you raise</p>
                 </div>
 
                 <div className="animate w-[300px] mx-auto">
@@ -112,7 +102,6 @@ const Landing = () => {
                     <a className="lg:col-start-4 lg:col-end-4">
                         <img src="/img/cup1.jpg" />
                     </a>
-
                 </div>
             </div>
         </section>
