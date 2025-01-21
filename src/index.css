@@ -56,7 +56,7 @@ nav a:hover::after {
   transform: scale3d(1, 1, 1);
 }
 
-.animation-start {
+.animate .animation-start {
   animation: up 1s forwards;
 }
 
@@ -83,4 +83,52 @@ nav a:hover::after {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+/*  */
+.animate-upDown{
+  @apply z-10 relative overflow-hidden;
+}
+.animate-upDown img{
+  scale: 1.1;
+  transition: all 1s ease-out;
+}
+.animate-upDown::after{
+  /* @apply absolute inset-0 z-20 duration-1000 bg-white; */
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  transition: all 1s ease-out;
+  background-color: white;
+  content: '';
+}
+.animate-upDown.animation-start::after{
+  transform: translateY(100%);
+}
+.animate-upDown.animation-start img{
+  scale: 1;
+}
+
+/* left to right clear animation */
+.animate-leftRight{
+  @apply z-10 relative overflow-hidden;
+}
+.animate-leftRight img{
+  scale: 1.1;
+  transition: all 1s ease-out;
+}
+.animate-leftRight::after{
+  /* @apply absolute inset-0 z-20 duration-1000 bg-white; */
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  transition: all 1s ease-out;
+  background-color: white;
+  content: '';
+}
+.animate-leftRight.animation-start::after{
+  transform: translateX(100%);
+}
+.animate-leftRight.animation-start img{
+  scale: 1;
 }

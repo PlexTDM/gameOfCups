@@ -20,7 +20,7 @@ const App = () => {
           </a>
         </div>
         <Landing />
-        <Catalog />
+        {/* <Catalog /> */}
         <div className='min-h-[100vh]'></div>
       </main>
     </div>
