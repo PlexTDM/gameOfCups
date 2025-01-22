@@ -20,7 +20,8 @@ export default {
       },
       colors: {
         'gray': '#252525',
-        'lgray': '#646464F2'
+        'lgray': '#646464F2',
+        'lgray2': '#8B8B8B'
       }
     },
   },

@@ -1,14 +1,20 @@
 import Nav from './Components/Nav';
 import Catalog from './Pages/Catalog';
 import Landing from './Pages/Landing';
+import FooterSection from './Pages/FooterSection';
+import Loader from './Components/Loader';
+import CatalogBuka from './Pages/CatalogBuka';
+import Footer from './Pages/Footer';
+// import Contacts from './Pages/Contacts';
 
 const App = () => {
 
   return (
     <div className='relative'>
+      <Loader />
       <Nav />
       <main className='font-aurora px-6 mx-auto'>
-        <div className='fixed top-1/2 -translate-y-1/2 right-0 z-50'>
+        <div className='fixed top-1/2 -translate-y-1/2 right-0 z-40'>
           <a href="https://www.awwwards.com/sites/game-of-cups" target="_blank" rel="noopener">
             <svg width="53.08" height="171.358">
               <path fill="#9BD4D7" d="M0 0h53.08v171.358H0z"></path>
@@ -21,6 +27,10 @@ const App = () => {
         </div>
         <Landing />
         <Catalog />
+        <CatalogBuka />
+        <FooterSection />
+        {/* <Contacts /> */}
+        <Footer />
       </main>
     </div>
   )

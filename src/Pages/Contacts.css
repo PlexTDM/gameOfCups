@@ -1,0 +1,83 @@
+.title1 {
+  margin-top: 5%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.symptom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* img {
+    height: 550px;
+    width: 900px;
+  } */
+}
+
+.grey {
+  color: grey;
+  font-size: 80%;
+  margin-top: -17%;
+  line-height: 15px;
+}
+
+.app {
+  margin-top: 50%;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.cont {
+  font-size: 80%;
+  margin-top: 8%;
+}
+.title2 {
+  font-weight: lighter;
+  font-size: 400%;
+  text-align: center;
+  font-family: sans-serif;
+  font-family: "Auora";
+  color: black;
+  text-transform: uppercase;
+}
+
+.title3 {
+  font-family: "Auora";
+  font-size: 250%;
+  text-transform: uppercase;
+  color: black;
+}
+
+.image {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.image.appear {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Initial state of elements: hidden and moved down */
+.slide-up {
+  opacity: 0;
+  transform: translateY(50px); /* Start below */
+  transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+}
+
+/* Apply animation after the component has loaded */
+.slide-up.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to the original position */
+}

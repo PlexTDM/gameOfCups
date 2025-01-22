@@ -118,6 +118,7 @@ const Landing = () => {
                 </div>
                 <img src="/img/vase.jpg" className="relative z-10" style={{ opacity: opacity }} />
             </div>
+
             <div className="flex justify-between mt-[170px]">
                 <div className="animate"><p className="uppercase">collections</p></div>
                 <div className="mr-12">
@@ -153,7 +154,7 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup1.jpg" className="cursor-pointer" />
                         </div>
-                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                         <h3 className="font-lg font-semibold">Collection “Symbols of Glory”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, gold, gemstones</p>
@@ -164,7 +165,7 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup2.jpg" className="cursor-pointer" />
                         </div>
-                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                         <h3 className="font-lg font-semibold">Collection “The Age of Ice and Fire”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, gold, gemstones</p>
@@ -175,7 +176,7 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup3.jpg" className="cursor-pointer" />
                         </div>
-                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                         <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, silver, gemstones</p>
@@ -190,7 +191,7 @@ const Landing = () => {
                     <div className="animate-leftRight">
                         <img src="/img/cup4.jpg" className="cursor-pointer" />
                     </div>
-                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                     <h3 className="font-lg font-semibold">Collection “Westerosi Feasts”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gold, gemstones</p>
@@ -203,7 +204,7 @@ const Landing = () => {
                         <div className="animate-upDown">
                             <img src="/img/cup5.jpg" className="cursor-pointer" />
                         </div>
-                        <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                        <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                         <h3 className="font-lg font-semibold">Collection ”Secrets of the night”</h3>
                         <span className="flex justify-between">
                             <p className="text-lgray text-xs">marble, silver, gemstones</p>
@@ -216,12 +217,12 @@ const Landing = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex gap-4 *:max-w-[290px] justify-end mt-[80px]">
+            <div className="flex gap-4 *:max-w-[25vw] justify-end mt-[80px]">
                 <div className="lg:col-start-4 lg:col-end-4">
                     <div className="animate-upDown">
                         <img src="/img/cup6.jpg" className="cursor-pointer" />
                     </div>
-                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                     <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>
@@ -232,18 +233,18 @@ const Landing = () => {
                     <div className="animate-upDown">
                         <img src="/img/cup7.jpg" className="cursor-pointer" />
                     </div>
-                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                     <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>
                         <a className="underline-effect uppercase text-xs relative cursor-pointer font-bold">more</a>
                     </span>
                 </div>
-            <div className="lg:col-start-4 lg:col-end-4">
+                <div className="lg:col-start-4 lg:col-end-4">
                     <div className="animate-upDown">
                         <img src="/img/cup8.jpg" className="cursor-pointer" />
                     </div>
-                    <div className="pt-5 pb-5 "> <hr className="border-stone-300"/></div>
+                    <div className="pt-5 pb-5 "> <hr className="border-stone-300" /></div>
                     <h3 className="font-lg font-semibold">Collection “The Houses of Westeros”</h3>
                     <span className="flex justify-between">
                         <p className="text-lgray text-xs">marble, silver, gemstones</p>

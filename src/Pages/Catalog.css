@@ -1,0 +1,196 @@
+body {
+  overflow-x: hidden;
+  font-family: "Aurora", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-left: 1%;
+}
+
+.catalog-container {
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.catalog-container {
+  padding: 0rem;
+}
+
+.catalog-items {
+  display: flex;
+  overflow-x: auto;
+  padding: 0rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.catalog-items::-webkit-scrollbar {
+  height: 8px;
+}
+
+.catalog-items::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.catalog-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.catalog-item {
+  flex: 0 0 auto;
+  min-width: 20px;
+  padding: 5px;
+  text-align: center;
+  scroll-snap-align: center; /* Ensures snapping */
+  transition: transform 0.2s;
+}
+
+/* img {
+  height: 400px;
+  width: 300px;
+} */
+
+.catalog-container {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Styles for each item in the catalog */
+.catalog-item {
+  flex: 0 0 20%; /* Adjust the width to have three items per row */
+  overflow: hidden;
+}
+
+.catalog-item-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Description styling (on the left, grey background) */
+.catalog-item p {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.catalog-items::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  color: black;
+  font-family: "Aurora", Arial;
+  line-height: 1;
+}
+
+.desc {
+  color: #8b8b8b;
+  font-size: 12px;
+  font-family: "Aurora", Arial;
+}
+
+.price-and-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.add-to-cart-button {
+  font-weight: bold;
+  left: 100px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.add-to-cart-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+  width: 85%;
+  height: 1.5px;
+  background-color: black;
+  transform: scaleX(1); /* Start with the full underline */
+  transform-origin: bottom left; /* The origin should be left */
+  transition: transform 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  color: grey;
+}
+
+.add-to-cart-button:hover::after {
+  transform: scaleX(0); /* Shrink the underline to the left */
+  transform-origin: bottom right; /* Shrinks from the right side */
+}
+
+.line {
+  background-color: rgb(208, 208, 208);
+  height: 1px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.cart-button {
+  font-weight: bold;
+  left: 0px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cart-button::after {
+  content: "";
+  position: absolute;
+  margin-top: 15px;
+  left: 6px;
+  width: 85%;
+  height: 1.5px;
+  background-color: black;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+.cart-button:hover {
+  color: grey;
+}
+
+.cart-button:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the arrows */
+}
+
+.arrows img {
+  width: 55px; /* Adjust size */
+  height: auto;
+}
+
+.arrow-right {
+  transform: rotate(180deg); /* Rotates the arrow to the other side */
+}
+
+.seeCatalog {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1050px;
+}

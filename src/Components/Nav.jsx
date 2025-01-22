@@ -1,6 +1,6 @@
 const Nav = () => {
     return (
-        <nav className="h-[50px] bg-white font-arial text-xs uppercase flex justify-between px-5 py-4 sticky top-0 z-50">
+        <nav className="h-[50px] bg-white font-arial text-xs uppercase flex justify-between px-5 py-4 sticky top-0 z-40">
             <a className="" href="/">
                 <img src="/logo.svg" alt="logo" />
             </a>
